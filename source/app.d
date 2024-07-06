@@ -2,7 +2,6 @@ module main;
 
 import std.algorithm;
 import std.conv: to;
-import std.string: chomp;
 import std.range;
 import std.stdio;
 
@@ -58,8 +57,6 @@ int main(string[] args)
 
         CliOptions._this = &options;
     }
-
-    import std.stdio: File;
 
     auto outFile = File(options.out_file, "w");
 
