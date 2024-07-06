@@ -32,8 +32,8 @@ int main(string[] args)
             "debug_output", `Add debug info to output file`, &options.debug_output,
             "include", `Additional include files`, &options.include_files,
             "clang_opts", `Clang options`, &options.clang_opts,
-            "show_excluded", `Output excluded entries: no/brief/full`, &options.show_excluded,
-            "threads", `threads`, &options.threads,
+            "show_excluded", `<no|brief|full> Output excluded entries`, &options.show_excluded,
+            "threads", `Threads number`, &options.threads,
         );
 
         if(options.out_file == "")
@@ -45,7 +45,7 @@ int main(string[] args)
         if (helpInformation.helpWanted)
         {
             defaultGetoptPrinter(`Usage: `~args[0]~" [PARAMETER]...\n"~
-                `Takes a list of AST files from STDIN and returns merged preprocessed file`,
+                `Takes a list of C files from STDIN and returns D bindings file`,
                 helpInformation.options);
 
             return 0;
