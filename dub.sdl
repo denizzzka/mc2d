@@ -1,0 +1,7 @@
+name "mc2d"
+description "Tool for merging C files into D bindings"
+authors "Denis Feklushkin"
+copyright "Copyright © 2024, Denis Feklushkin"
+license "GPL-3.0-only"
+dependency "libclang" version="~>0.3.3"
+dependency "dpp" version="~>0.6.0"
