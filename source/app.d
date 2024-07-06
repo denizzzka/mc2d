@@ -16,7 +16,6 @@ struct CliOptions
     string[] include_files;
     string[] clang_opts;
     ShowExcluded show_excluded;
-    size_t batch_size = 1;
     uint threads = 1;
 }
 
@@ -34,7 +33,6 @@ int main(string[] args)
             "include", `Additional include files`, &options.include_files,
             "clang_opts", `Clang options`, &options.clang_opts,
             "show_excluded", `Output excluded entries: no/brief/full`, &options.show_excluded,
-            "batch_size", `batch_size`, &options.batch_size,
             "threads", `threads`, &options.threads,
         );
 
