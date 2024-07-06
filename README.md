@@ -39,7 +39,7 @@ $ find <path_to_preprocessed_files_dir> -type f -name "*.i" > files_list.txt
 
 ```
 $ ./mc2d --clang_opts="--target=riscv32" --threads=8 \
-    --output binding_module.d < files_list.txt 2> err.log
+    --output binding_module.d < files_list.txt
 ```
 
 Note that it is still need to specify target architecture because C variables sizes depend on it.
