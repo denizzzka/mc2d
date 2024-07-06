@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/mc2d
+mc2d.so
+mc2d.dylib
+mc2d.dll
+mc2d.a
+mc2d.lib
+mc2d-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
