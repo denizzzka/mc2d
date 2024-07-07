@@ -44,7 +44,7 @@ $ ./mc2d --clang_opts="--target=riscv32" --threads=8 \
 
 Note that it is still need to specify target architecture because C variables sizes depend on it.
 
-Great, now if everything went well you will obtain `binding_module.d` module!
+Great, now, if everything went well, you will obtain `binding_module.d` module!
 
 * Caveat
 
@@ -53,4 +53,4 @@ Unfortunately, during the merge process it is impossible to determine whether su
 
 Practice has shown that this is not a serious problem in real code.
 
-If you need to access the excluded statement try to exclude from input all other files containing same statement (use `--show_excluded` to find these files)
+If you need to access an excluded statement try to exclude from input all other files containing same statement (use `--show_excluded` to find these files)
