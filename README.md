@@ -1,4 +1,4 @@
-mc2d - tool for merging C files into D bindings
+mc2d - tool for merging C files (of any standard) into D bindings
 =====
 
 #### Build
